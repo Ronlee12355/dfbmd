@@ -1,0 +1,14 @@
+Package: dfbmd
+Type: Package
+Title: Documented Functions of Bioinformatics during Master Degree
+Version: 0.0.0900
+Date: 2019-06-27
+Author: Jiang Li
+Maintainer: Jiang Li <ronlee12355@outlook.com>
+Description: Several functions and algorithms related to bioinformatics during my master degree
+License: GPL-2
+Encoding: UTF-8
+Imports:
+  mldr (>= 0.4.2)
+LazyData: true
+RoxygenNote: 6.1.1
