@@ -19,5 +19,9 @@ dfbmd is a package which consises of documented functions, many of them are orgi
 it from github:
 # install.packages("devtools")
 devtools::install_github("Ronlee12355/dfbmd")
-
 ```
+
+## Contact
+
+If you would like to contact the author, the Google email address is always available and the address is ronlee12355@gmail.com.   
+
