@@ -4,8 +4,13 @@
 \alias{df_to_comb_matrix}
 \title{Function to convert sepcific columns of a dataframe to a named matrix with value}
 \usage{
-df_to_comb_matrix(input.df = data.frame(), col.margin = 1,
-  row.margin = 2, value.margin = 3, fill = NA)
+df_to_comb_matrix(
+  input.df = data.frame(),
+  col.margin = 1,
+  row.margin = 2,
+  value.margin = 3,
+  fill = NA
+)
 }
 \arguments{
 \item{input.df}{The dataframe contains needed columns}

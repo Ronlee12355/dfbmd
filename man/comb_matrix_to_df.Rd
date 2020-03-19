@@ -4,8 +4,11 @@
 \alias{comb_matrix_to_df}
 \title{Function to convert named matrix to colname-rowname dataframe}
 \usage{
-comb_matrix_to_df(input.matrix = matrix(), colnames.first = TRUE,
-  new.colnames = c("c", "r", "value"))
+comb_matrix_to_df(
+  input.matrix = matrix(),
+  colnames.first = TRUE,
+  new.colnames = c("c", "r", "value")
+)
 }
 \arguments{
 \item{input.matrix}{Matrix contains names and values}

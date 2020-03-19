@@ -4,8 +4,11 @@
 \alias{random_walk}
 \title{Using random walk algorithm to predict drug-drug interaction with restart}
 \usage{
-random_walk(similarity_matrix = matrix(), adjacent_matrix = matrix(),
-  probability = 0.85)
+random_walk(
+  similarity_matrix = matrix(),
+  adjacent_matrix = matrix(),
+  probability = 0.85
+)
 }
 \arguments{
 \item{similarity_matrix}{Similarity matrix of N drugs}
