@@ -9,8 +9,10 @@ Description: Several functions and algorithms related to bioinformatics during m
 License: GPL-2
 Encoding: UTF-8
 Imports:
-  mldr (>= 0.4.2),
-  precrec (>= 0.10),
-  ggplot2 (>= 3.2.1)
+  mldr,
+  precrec,
+  ggplot2,
+  magrittr,
+  ROCR
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
