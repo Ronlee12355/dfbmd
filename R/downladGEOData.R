@@ -14,7 +14,6 @@ downloadGEOData <- function(GEO='', destdir='.'){
     stop('Please install package GEOquery first')
   }
 
-  library(GEOquery)
   eSet <- geoGEO(GEO, destdir = destdir, getGPl = F)
 
   write.csv(exprs(eSet[[1]]), file = paste0(GEO, '_expression_matrix.csv'))
