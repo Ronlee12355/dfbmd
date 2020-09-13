@@ -1,0 +1,21 @@
+---
+title: "dfbmd: an R package of several functions and algorithms related to bioinformatics during my master degree"
+author: "Jiang Li"
+output: rmarkdown::pdf_document
+vignette: >
+  %\VignetteIndexEntry{dfbmd: an R package of several functions and algorithms related to bioinformatics during my master degree}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.align   = 'center'
+)
+```
+
+```{r setup}
+library(dfbmd)
+```
