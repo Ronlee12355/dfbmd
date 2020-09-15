@@ -9,11 +9,12 @@ Description: Several functions and algorithms related to bioinformatics during m
 License: GPL-2
 Encoding: UTF-8
 Imports:
-  mldr,
-  precrec,
-  ggplot2,
-  magrittr,
-  ROCR
+    mldr,
+    precrec,
+    ggplot2,
+    magrittr,
+    ROCR,
+    Rcpp
 LazyData: true
 RoxygenNote: 7.1.1
 Depends: R(>= 3.5.0)
@@ -24,3 +25,5 @@ Suggests:
     Biobase,
     testthat
 VignetteBuilder: knitr
+LinkingTo: 
+    Rcpp
