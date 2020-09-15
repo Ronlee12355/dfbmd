@@ -13,11 +13,14 @@ Imports:
   precrec,
   ggplot2,
   magrittr,
-  ROCR,
-  GEOquery
+  ROCR
 LazyData: true
 RoxygenNote: 7.1.1
+Depends: R(>= 3.5.0)
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    GEOquery,
+    Biobase,
+    testthat
 VignetteBuilder: knitr

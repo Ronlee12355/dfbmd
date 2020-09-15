@@ -10,13 +10,17 @@
 #' @examples
 #' downloadGEOData(GEO='GSE39582')
 downloadGEOData <- function(GEO='', destdir='.'){
-  if(!require('GEOquery')){
-    stop('Please install package GEOquery first')
+  if(!requireNamespace('GEOquery')){
+    stop('Please install package GEOquery')
   }
 
-  eSet <- geoGEO(GEO, destdir = destdir, getGPl = F)
+  if(!requireNamespace('Biobase')){
+    stop('Please install package Biobase')
+  }
 
-  write.csv(exprs(eSet[[1]]), file = paste0(GEO, '_expression_matrix.csv'))
-  write.csv(pData(eSet[[1]]), file = paste0(GEO, '_phenotype_info.csv'))
+  eSet <- GEOquery::geoGEO(GEO, destdir = destdir, getGPl = F)
+
+  write.csv(Biobase::exprs(eSet[[1]]), file = paste0(GEO, '_expression_matrix.csv'))
+  write.csv(Biobase::pData(eSet[[1]]), file = paste0(GEO, '_phenotype_info.csv'))
   return(eSet)
 }

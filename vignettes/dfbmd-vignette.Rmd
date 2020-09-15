@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+# The way to install and use this package
+```{r eval=FALSE}
+devtools::install_github('Ronlee12355/dfbmd')
 library(dfbmd)
 ```
