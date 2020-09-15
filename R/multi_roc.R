@@ -6,7 +6,8 @@
 #' class, the upper level to the positive class
 #' @return a list containing multiple ROCR objects
 #' @seealso \code{\link{ROCR}}
-
+#' @importFrom base print
+#' @importFrom magrittr %>%
 multi_roc <- function(predictors, label){
   auc_obj <- lapply(predictors, function(x){
     pred<-prediction(x, labels = label) %>%

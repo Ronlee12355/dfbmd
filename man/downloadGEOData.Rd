@@ -18,7 +18,9 @@ An object of the appropriate class (GDS, GPL, GSM, or GSE) is returned
 This function writes out two csv files, one contains the data matrix and the other contains the phenotype information of each sample
 }
 \examples{
-downloadGEOData(GEO='GSE39582')
+\dontrun{
+ downloadGEOData(GEO='GSE39582')
+}
 }
 \seealso{
 \code{\link[GEOquery]{getGEO}}

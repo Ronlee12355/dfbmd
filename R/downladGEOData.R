@@ -8,7 +8,10 @@
 #' @seealso \code{\link[GEOquery]{getGEO}}
 #'
 #' @examples
-#' downloadGEOData(GEO='GSE39582')
+#' \dontrun{
+#'  downloadGEOData(GEO='GSE39582')
+#' }
+#' @importFrom utils write.csv
 downloadGEOData <- function(GEO='', destdir='.'){
   if(!requireNamespace('GEOquery')){
     stop('Please install package GEOquery')
