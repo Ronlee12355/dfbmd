@@ -1,2 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("stats", "na.omit", "var")
+import(Rcpp)
+useDynLib(dfbmd, .registration = TRUE)

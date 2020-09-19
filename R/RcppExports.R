@@ -2,6 +2,14 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 calcGScoreCPP <- function(Set, Eso, exponent) {
-    .Call('_dfbmd_calcGScoreCPP', PACKAGE = 'dfbmd', Set, Eso, exponent)
+    .Call(`_dfbmd_calcGScoreCPP`, Set, Eso, exponent)
+}
+
+#' Multiply a number by two
+#'
+#' @param x A single integer.
+#' @export
+timesTwo <- function(x) {
+    .Call(`_dfbmd_timesTwo`, x)
 }
 

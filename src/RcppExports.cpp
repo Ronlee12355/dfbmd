@@ -18,9 +18,21 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// timesTwo
+NumericVector timesTwo(NumericVector x);
+RcppExport SEXP _dfbmd_timesTwo(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(timesTwo(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_dfbmd_calcGScoreCPP", (DL_FUNC) &_dfbmd_calcGScoreCPP, 3},
+    {"_dfbmd_timesTwo", (DL_FUNC) &_dfbmd_timesTwo, 1},
     {NULL, NULL, 0}
 };
 
