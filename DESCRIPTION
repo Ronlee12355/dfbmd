@@ -5,7 +5,7 @@ Version: 0.0.0900
 Date: 2019-06-27
 Author: Jiang Li
 Maintainer: Jiang Li <ronlee12355@outlook.com>
-Description: Several functions and algorithms related to bioinformatics during my master degree
+Description: Several functions and algorithms related to bioinformatics during my master degree.
 License: GPL-3
 Encoding: UTF-8
 Imports:
@@ -21,7 +21,8 @@ Depends: R(>= 3.5.0)
 Suggests: 
     knitr,
     rmarkdown,
-    testthat
+    testthat,
+    tidyverse
 VignetteBuilder: knitr
 LinkingTo: 
     Rcpp

@@ -20,5 +20,5 @@ This function visualize multiple ROC curves and display values
 of Area Under the Receiver Operating Characteristic curve (AUROC)
 }
 \seealso{
-\code{\link{ROCR}}
+\code{\link[ROCR]{prediction}}, \code{\link[ROCR]{performance}}
 }

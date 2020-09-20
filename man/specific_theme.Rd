@@ -13,6 +13,13 @@ value of standard error
 This function computes the standard error of the values in x. If na.rm is TRUE then missing values are
 removed before computation proceeds.
 }
+\examples{
+\dontrun{
+library(tidyverse)
+ggplot(iris, aes(x=Sepal.Length , y= Species, fill= Species))+geom_boxplot()+
+specific_theme()
+}
+}
 \seealso{
 \code{\link{ggplot2}}
 }

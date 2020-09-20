@@ -2,8 +2,14 @@
 #' @description This function computes the standard error of the values in x. If na.rm is TRUE then missing values are
 #' removed before computation proceeds.
 #' @return value of standard error
+#' @importFrom ggplot2 theme_bw theme element_blank element_rect element_text element_line
 #' @seealso \code{\link{ggplot2}}
-#' @examples
+#' @examples \dontrun{
+#' library(tidyverse)
+#' ggplot(iris, aes(x=Sepal.Length , y= Species, fill= Species))+geom_boxplot()+
+#' specific_theme()
+#' }
+#' @export
 specific_theme <- function(){
   theme_bw()+
     theme(panel.grid = element_blank(),panel.border = element_rect(size=1))+

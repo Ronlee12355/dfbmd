@@ -8,6 +8,7 @@
 #' @seealso \code{\link{sd}}
 #' @examples standard_error(1:7)
 #' @importFrom stats na.omit var
+#' @export
 standard_error <- function(x, na.rm = FALSE){
   x <- as.double(x)
   return(var(x, na.rm = na.rm)/length(na.omit(x)))

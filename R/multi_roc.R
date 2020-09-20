@@ -5,9 +5,10 @@
 #' @param label Ideally, labels should be supplied as ordered factor(s), the lower level corresponding to the negative
 #' class, the upper level to the positive class
 #' @return a list containing multiple ROCR objects
-#' @seealso \code{\link{ROCR}}
-#' @importFrom base print
+#' @seealso \code{\link[ROCR]{prediction}}, \code{\link[ROCR]{performance}}
 #' @importFrom magrittr %>%
+#' @importFrom ROCR prediction performance
+#' @export
 multi_roc <- function(predictors, label){
   auc_obj <- lapply(predictors, function(x){
     pred<-prediction(x, labels = label) %>%
@@ -19,6 +20,6 @@ multi_roc <- function(predictors, label){
       performance(measure = 'auc')
     return(pred@y.values[[1]])
   })
-  print(auc_values)
+  cat(paste0(auc_values, '\n'))
   return(auc_obj)
 }

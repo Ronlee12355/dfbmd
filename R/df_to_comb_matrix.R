@@ -13,6 +13,7 @@
 #'   A <- data.frame(x = c('a', 'b', 'c'), y = c('A', 'B', 'c'), v = c(3:5))
 #'   df_to_comb_matrix(A, col.margin = 2, row.margin = 1, value.margin = 3)
 #' }
+#' @export
 df_to_comb_matrix <- function(input.df = data.frame(), col.margin = 1,
                               row.margin = 2, value.margin = 3, fill = NA){
   if(identical(col.margin, row.margin) | identical(col.margin, value.margin) | identical(row.margin, value.margin)){

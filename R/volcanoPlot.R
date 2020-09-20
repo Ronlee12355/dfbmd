@@ -2,12 +2,13 @@
 #'
 #' @param dt Dataframe with specific columns
 #' @param mainTitle Main title of the plot
-#'
+#' @import ggplot2
+#' @export
 #' @return Object of ggplot2
 #' @details Input data should be dataframe containing following columns:
 #' log2FC: the value of fold change; padj: adjusted p value; threshold: Up-, down-regulated genes
 volcanoPlot<-function(dt, mainTitle=''){
-  ggplot(data = dt, aes(x = log2FC, y = -log10(padj), colour=threshold)) +
+  ggplot(data = dt, aes_string(x = 'log2FC', y = -('log10(padj)'), colour='threshold')) +
     geom_point(size=0.5) +
     scale_color_manual(values=c("green", "blue","red")) +
     xlim(c(-20, 20)) +

@@ -5,6 +5,7 @@
 #' @param probability The probability of jumping back ti initial point
 #'
 #' @return NxN Matrix of probability
+#' @export
 #' @references Zhang el at (2017). Predicting potential drug-drug interactions by integrating chemical, biological, phenotypic and network data. BMC Bioinformatics 18:18
 
 random_walk <- function(similarity_matrix = matrix(), adjacent_matrix = matrix(),

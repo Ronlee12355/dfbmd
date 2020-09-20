@@ -13,6 +13,5 @@ diagonal_zero <- function(input = matrix()){
   if(nrow(input) == ncol(input)){
     stop("The input matrix should be in the size size of row and column")
   }
-
   return(input - diag(diag(input)))
 }

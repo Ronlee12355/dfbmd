@@ -7,12 +7,12 @@
 auroc_aupr(scores, labels, mode = "both")
 }
 \arguments{
+\item{scores}{A numeric dataset of predicted scores, a vector}
+
 \item{labels}{A numeric, character, logical, or factor dataset of observed labels}
 
 \item{mode}{A string that specifies the types of evaluation measures that the evalmod function calculates, roc, pr, both.
 the default is both.}
-
-\item{score}{A numeric dataset of predicted scores, a vector}
 }
 \value{
 value of computed scores of roc or prc.
@@ -26,5 +26,5 @@ y <- factor(c('yes','no','yes','no'))
 auroc_aupr(scores = x, labels = y)
 }
 \seealso{
-\code{\link{[precrec]evalmod}}
+\code{\link[precrec]{evalmod}}
 }
