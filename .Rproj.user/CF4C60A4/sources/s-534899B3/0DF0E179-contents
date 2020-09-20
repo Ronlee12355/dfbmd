@@ -1,0 +1,25 @@
+a<-system.file("extdata", "BIOGRID-ORGANISM-Homo_sapiens-3.4.162.tab2.txt", package = "dfbmd")
+a<-data.table::fread(a, data.table = F)
+source <- as.character(a[, "Entrez Gene Interactor A"])
+target <- as.character(a[, "Entrez Gene Interactor B"])
+interac.type <- as.character(a[, "Experimental System Type"])
+## Create a matrix from the data, and names its columns accordingly
+interactions <- cbind(source, target, interac.type)
+colnames(interactions) <- c("InteractorA", "InteractorB", "InteractionType")
+interactions<-unique(interactions)
+interactions<-interactions[interactions[, 'InteractorA'] != interactions[, 'InteractorB'], ]
+
+dupRow <- unlist(sapply(1:nrow(interactions), function(x) {
+  if(interactions[x, 1] == interactions[x, 2]){
+    x
+  }
+}))
+interactions <- interactions[-dupRow, ]
+
+a<-a[,c("Entrez Gene Interactor A", "Entrez Gene Interactor B", "Experimental System Type")]
+a[[1]]<-as.character(a[[1]])
+a[[2]]<-as.character(a[[2]])
+a[[3]]<-as.character(a[[3]])
+colnames(a)<-c("InteractorA", "InteractorB", "InteractionType")
+a<-unique(a)
+a<-a[a[, 'InteractorA'] != a[, 'InteractorB'], ]

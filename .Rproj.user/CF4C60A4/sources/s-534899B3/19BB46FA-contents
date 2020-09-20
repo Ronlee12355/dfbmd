@@ -1,0 +1,28 @@
+Package: dfbmd
+Type: Package
+Title: Documented Functions of Bioinformatics during Master Degree
+Version: 0.0.0900
+Date: 2019-06-27
+Author: Jiang Li
+Maintainer: Jiang Li <ronlee12355@outlook.com>
+Description: Several functions and algorithms related to bioinformatics during my master degree.
+License: GPL-3
+Encoding: UTF-8
+Imports:
+    mldr,
+    precrec,
+    ggplot2,
+    magrittr,
+    ROCR,
+    Rcpp
+LazyData: true
+RoxygenNote: 7.1.1
+Depends: R(>= 3.5.0)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat,
+    tidyverse
+VignetteBuilder: knitr
+LinkingTo: 
+    Rcpp
