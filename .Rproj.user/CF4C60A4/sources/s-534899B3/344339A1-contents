@@ -1,9 +1,0 @@
-#' @title Documented Functions of Bioinformatics during Master Degree
-#'
-#'
-#' @docType package
-#' @name dfbmd
-#'
-#' @useDynLib dfbmd
-#' @importFrom Rcpp sourceCpp
-NULL

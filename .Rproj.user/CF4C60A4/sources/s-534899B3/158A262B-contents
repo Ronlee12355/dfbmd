@@ -1,9 +1,0 @@
-#' @title Label matrix of MLKNN
-#'
-#' @description Label matrix of drug-indications (row: drug, column: indication),
-#'   1 means drug interacts with indication, 0 means otherwise
-#' @name labels
-#' @docType data
-#'
-#' @keywords dataset
-NULL

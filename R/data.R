@@ -16,9 +16,13 @@
 
 
 
-#' a number of 10
-#' @aliases x
+#' Failthful dataset
+#' @format A data frame contains 272 observations and 2 variables
+#' \describe{
+#'    \item{eruptions}{eruptions, numerical}
+#'    \item{waiting}{waiting, numerical}
+#' }
 #' @docType data
 #' @example
-#' data(x)
-"x"
+#' data(failthful)
+"failthful"
